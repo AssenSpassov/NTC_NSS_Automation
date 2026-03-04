@@ -1,0 +1,610 @@
+Host adrastea
+   Hostname 10.24.198.15
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-dsip
+   Hostname 10.24.196.15
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-pc
+   Hostname 10.24.198.20
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-cvm1
+   Hostname 10.24.198.11
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-cvm2
+   Hostname 10.24.198.12
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-cvm3
+   Hostname 10.24.198.13
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-host1
+   Hostname 10.24.197.11
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-host2
+   Hostname 10.24.197.12
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host adrastea-host3
+   Hostname 10.24.197.13
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host metis
+   Hostname 10.24.198.25
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-dsip
+   Hostname 10.24.196.25
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-pc
+   Hostname 10.24.198.30
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-cvm1
+   Hostname 10.24.198.21
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-cvm2
+   Hostname 10.24.198.22
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-cvm3
+   Hostname 10.24.198.23
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host metis-host1
+   Hostname 10.24.197.21
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host metis-host2
+   Hostname 10.24.197.22
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host metis-host3
+   Hostname 10.24.197.23
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host io
+   Hostname 10.24.198.35
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-dsip
+   Hostname 10.24.196.35
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-pc
+   Hostname 10.24.198.40
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-cvm1
+   Hostname 10.24.198.31
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-cvm2
+   Hostname 10.24.198.32
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-cvm3
+   Hostname 10.24.198.33
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host io-host1
+   Hostname 10.24.197.31
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host io-host2
+   Hostname 10.24.197.32
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host io-host3
+   Hostname 10.24.197.33
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host amalthea
+   Hostname 10.24.198.45
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-dsip
+   Hostname 10.24.196.45
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-pc
+   Hostname 10.24.198.50
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-cvm1
+   Hostname 10.24.198.41
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-cvm2
+   Hostname 10.24.198.42
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-cvm3
+   Hostname 10.24.198.43
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-host1
+   Hostname 10.24.197.41
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-host2
+   Hostname 10.24.197.42
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host amalthea-host3
+   Hostname 10.24.197.43
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+
+Host callisto
+   Hostname 10.24.198.55
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-dsip
+   Hostname 10.24.196.55
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-pc
+   Hostname 10.24.198.60
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-cvm1
+   Hostname 10.24.198.51
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-cvm2
+   Hostname 10.24.198.52
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-cvm3
+   Hostname 10.24.198.53
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-host1
+   Hostname 10.24.197.51
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-host2
+   Hostname 10.24.197.52
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host callisto-host3
+   Hostname 10.24.197.53
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host elara
+   Hostname 10.24.198.65
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-dsip
+   Hostname 10.24.196.65
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-pc
+   Hostname 10.24.198.70
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-cvm1
+   Hostname 10.24.198.61
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-cvm2
+   Hostname 10.24.198.62
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-cvm3
+   Hostname 10.24.198.63
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host elara-host1
+   Hostname 10.24.197.61
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host elara-host2
+   Hostname 10.24.197.62
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host elara-host3
+   Hostname 10.24.197.63
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host leda
+   Hostname 10.24.198.75
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-dsip
+   Hostname 10.24.196.75
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-pc
+   Hostname 10.24.198.80
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-cvm1
+   Hostname 10.24.198.71
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-cvm2
+   Hostname 10.24.198.72
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-cvm3
+   Hostname 10.24.198.73
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host leda-host1
+   Hostname 10.24.197.71
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host leda-host2
+   Hostname 10.24.197.72
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host leda-host3
+   Hostname 10.24.197.73
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host himalia
+   Hostname 10.24.198.85
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-dsip
+   Hostname 10.24.196.85
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-pc
+   Hostname 10.24.198.90
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-cvm1
+   Hostname 10.24.198.81
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-cvm2
+   Hostname 10.24.198.82
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-cvm3
+   Hostname 10.24.198.83
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-host1
+   Hostname 10.24.197.81
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-host2
+   Hostname 10.24.197.82
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host himalia-host3
+   Hostname 10.24.197.83
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+
+Host themisto
+   Hostname 10.24.198.95
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-dsip
+   Hostname 10.24.196.95
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-pc
+   Hostname 10.24.198.100
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-cvm1
+   Hostname 10.24.198.91
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-cvm2
+   Hostname 10.24.198.92
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-cvm3
+   Hostname 10.24.198.93
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-host1
+   Hostname 10.24.197.91
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-host2
+   Hostname 10.24.197.92
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host themisto-host3
+   Hostname 10.24.197.93
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host lysithea
+   Hostname 10.24.198.105
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-dsip
+   Hostname 10.24.196.105
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-pc
+   Hostname 10.24.198.110
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-cvm1
+   Hostname 10.24.198.101
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-cvm2
+   Hostname 10.24.198.102
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-cvm3
+   Hostname 10.24.198.103
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-host1
+   Hostname 10.24.197.101
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-host2
+   Hostname 10.24.197.102
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host lysithea-host3
+   Hostname 10.24.197.103
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host pandia
+   Hostname 10.24.198.115
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-dsip
+   Hostname 10.24.196.115
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-pc
+   Hostname 10.24.198.120
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-cvm1
+   Hostname 10.24.198.111
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-cvm2
+   Hostname 10.24.198.112
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-cvm3
+   Hostname 10.24.198.113
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-host1
+   Hostname 10.24.197.111
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-host2
+   Hostname 10.24.197.112
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host pandia-host3
+   Hostname 10.24.197.113
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host sinope
+   Hostname 10.24.198.125
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host sinope-dsip
+   Hostname 10.24.196.125
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host sinope-pc
+   Hostname 10.24.198.130
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host sinope-cvm1
+   Hostname 10.24.198.121
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host sinope-host1
+   Hostname 10.24.197.121
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host dia
+   Hostname 10.24.198.135
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host dia-dsip
+   Hostname 10.24.196.135
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host dia-pc
+   Hostname 10.24.198.140
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host dia-cvm1
+   Hostname 10.24.198.131
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host dia-host1
+   Hostname 10.24.197.131
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host valetudo
+   Hostname 10.24.198.235
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host valetudo-dsip
+   Hostname 10.24.196.235
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host valetudo-pc
+   Hostname 10.24.198.240
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host valetudo-cvm1
+   Hostname 10.24.198.231
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host valetudo-host1
+   Hostname 10.24.197.231
+   User root
+   IdentityFile ~/.ssh/id_rsa
+   
+Host autonoe
+   Hostname 10.24.198.245
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-dsip
+   Hostname 10.24.196.245
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-pc
+   Hostname 10.24.198.250
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-cvm1
+   Hostname 10.24.198.241
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-cvm2
+   Hostname 10.24.198.242
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-cvm3
+   Hostname 10.24.198.243
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-host1
+   Hostname 10.24.197.241
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-host2
+   Hostname 10.24.197.242
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host autonoe-host3
+   Hostname 10.24.197.243
+   User root
+   IdentityFile ~/.ssh/id_rsa
+
+Host thebe
+   Hostname 10.24.201.10
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-cvm1
+   Hostname 10.24.201.31
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-cvm2
+   Hostname 10.24.201.32
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-cvm3
+   Hostname 10.24.201.33
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-host1
+   Hostname 10.24.201.21
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-host2
+   Hostname 10.24.201.22
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-host3
+   Hostname 10.24.201.23
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host thebe-dsip
+   Hostname 10.24.201.20
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+
+Host europa
+   Hostname 10.24.202.10
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-cvm1
+   Hostname 10.24.202.31
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-cvm2
+   Hostname 10.24.202.32
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-cvm3
+   Hostname 10.24.202.33
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-host1
+   Hostname 10.24.202.21
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-host2
+   Hostname 10.24.202.22
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-host3
+   Hostname 10.24.202.23
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host europa-dsip
+   Hostname 10.24.202.20
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+
+Host harpalyke
+   Hostname 10.24.203.10
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-cvm1
+   Hostname 10.24.203.31
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-cvm2
+   Hostname 10.24.203.32
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-cvm3
+   Hostname 10.24.203.33
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-host1
+   Hostname 10.24.203.21
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-host2
+   Hostname 10.24.203.22
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-host3
+   Hostname 10.24.203.23
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host harpalyke-dsip
+   Hostname 10.24.203.20
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+
+Host foundation
+   Hostname 10.24.199.0
+   User nutanix

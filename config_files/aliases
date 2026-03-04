@@ -1,0 +1,72 @@
+ssh_opts="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR"
+
+alias n="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix "
+#alias cvm="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm\$\1"
+
+#cvm() { ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm$1 }
+
+alias delivery="~/delivery.sh"
+
+function cvm() {
+ if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
+ then
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+ else
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $cluster4prompt-cvm$@
+ fi
+}
+
+
+
+alias rn="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l root "
+
+function rhost() {
+ if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
+ then
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l root $@
+ else
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l root ${cluster4prompt}-host$@
+ fi
+}
+
+function nhost() {
+ if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
+ then
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+ else
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix ${cluster4prompt}-host$@
+ fi
+}
+
+function pc() {
+ if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
+ then
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+ else
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix ${cluster4prompt}-pc$@
+ fi
+}
+
+function c() {
+ if [ -z $@ ] && [ ! -z $cluster4prompt ]
+ then
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $cluster4prompt
+ else
+  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+ fi
+}
+
+function cinfo() {
+ if [ -z $@ ] && [ ! -z $cluster4prompt ]
+ then
+  grep -A1 $cluster4prompt ~/.ssh/config
+ else
+  echo "Clustername is needed ..."
+ fi
+
+}
+
+#alias c="n \$cluster4prompt"
+
+alias sshn="ssh -i ~/.ssh/nutan_id_rsa -l nutanix"
+alias sshp="ssh $ssh_opts -l nutanix"

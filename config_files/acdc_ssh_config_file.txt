@@ -1,0 +1,36 @@
+Host acdc-nested-vip
+   Hostname 172.16.0.253
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-dsip
+   Hostname 172.16.0.254
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-pc
+   Hostname 172.16.0.252
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-cvm1
+   Hostname 172.16.0.101
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-cvm2
+   Hostname 172.16.0.102
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-cvm3
+   Hostname 172.16.0.103
+   User nutanix
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-host1
+   Hostname 172.16.0.1
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-host2
+   Hostname 172.16.0.2
+   User root
+   IdentityFile ~/.ssh/id_rsa
+Host acdc-nested-host3
+   Hostname 172.16.0.3
+   User root
+   IdentityFile ~/.ssh/id_rsa

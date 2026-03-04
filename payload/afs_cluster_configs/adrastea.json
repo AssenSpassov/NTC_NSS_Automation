@@ -1,0 +1,41 @@
+[
+    {
+    "name" : "Adrastea",
+	"cluster_external_ipaddress" : "10.24.198.15",
+	"username" : "admin",
+	"password" : "nx2Tech715!",
+	"pub_key_name" : "DO-NOT-DELETE-instructor-key",
+	"pub_key_string" : "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAt4blLdl4bLQeOfpQGU4BDLCkqse435xmbaUQVSVyClRDZjTd+57LHBQeQmkn+L2//dNdL998buLi9WQzfqvCvx4zKyoOm0T4sUrbVZrEDCsNZjd3Cge1TSLT5v6qcmGqwMYE4Ehwu0ktH0attvgLup5kqo9myugBAbksKTlqjWY1dVZe5KlDlQ4m5j7H7JiGEe77bkOCqvNUip/eNEWWfKYwKvrptmpf0WR/upIL7Wz2s57rf75UpOOIOimvzL34NCMIaEjBfmqV1+dRimg1H/n5C6Vi+mJT0ok3uMx4hdc3bHWtO9qTMHidFCr91hlpMWFw5VbV0i4/+2kE8BVx5w== rsa-key-20190325",
+	"network_name" : "MGMT",
+	"network_vlan" : "0",
+	"files_software_version" : "4.4.0.2",
+	"files_configuration" :
+	{
+            "name":"adrastea-FS",
+            "dnsDomainName":"Learn.local",
+            "sizeGib":"1024",
+            "numCalculatedNvms":"3",
+            "numVcpus":"4",
+            "memoryGiB":"12",
+            "internalNetwork":
+               {"subnetMask":"255.255.252.0",
+                "defaultGateway":"10.24.196.1",
+                "uuid":"DO_NOT_DEFINE",
+                "pool":["10.24.199.14 10.24.199.17"]
+               },
+            "externalNetworks":
+               [{
+                 "subnetMask":"255.255.252.0",
+                 "defaultGateway":"10.24.196.1",
+                 "uuid":"DO_NOT_DEFINE",
+                 "pool":["10.24.199.11 10.24.199.13"]
+               }],
+            "dnsServerIpAddresses":["10.24.192.125"],
+            "ntpServers":["10.24.192.4"],
+            "windowsAdDomainName":"learn.local",
+            "windowsAdUsername":"Administrator",
+            "windowsAdPassword":"Nutanix/4u!",
+            "pdName":"NTNX-Adrastea-FS-PD"
+	}
+    }
+]

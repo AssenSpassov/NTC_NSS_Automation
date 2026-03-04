@@ -1,0 +1,9 @@
+This is the file (obviously the one without .readme at the end) you have to put in your ~/.ssh folder to make sure you can do things like:
+ssh pandia
+and not worry about IP addresses and usernames depending on where are you connecting (CVMs vs. hosts), and such.
+permissions should be 600: chmod 600 ~/.ssh/config
+
+It assumes your public key is named id_rsa and is in ~/.ssh folder. This can be tweaked if you have it differently.
+How to generate the public and private key pairs on Linux (no need to do any changes in sshd_config file!):
+https://www.maketecheasier.com/generate-public-private-ssh-key/
+
