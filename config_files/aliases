@@ -1,58 +1,60 @@
 ssh_opts="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR"
+private_key="~/.ssh/id_rsa"
 
-alias n="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix "
-#alias cvm="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm\$\1"
+alias n="ssh -i $private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix "
+alias a="ssh -i $private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l admin "
+#alias cvm="ssh -i $private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm\$\1"
 
-#cvm() { ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm$1 }
+#cvm() { ssh -i $private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l nutanix ${cluster4prompt}-cvm$1 }
 
 alias delivery="~/delivery.sh"
 
 function cvm() {
  if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
  then
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+  ssh $ssh_opts -i $private_key -l nutanix $@
  else
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $cluster4prompt-cvm$@
+  ssh $ssh_opts -i $private_key -l nutanix $cluster4prompt-cvm$@
  fi
 }
 
 
 
-alias rn="ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l root "
+alias rn="ssh -i $private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l root "
 
 function rhost() {
  if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
  then
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l root $@
+  ssh $ssh_opts -i $private_key -l root $@
  else
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l root ${cluster4prompt}-host$@
+  ssh $ssh_opts -i $private_key -l root ${cluster4prompt}-host$@
  fi
 }
 
 function nhost() {
  if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
  then
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+  ssh $ssh_opts -i $private_key -l nutanix $@
  else
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix ${cluster4prompt}-host$@
+  ssh $ssh_opts -i $private_key -l nutanix ${cluster4prompt}-host$@
  fi
 }
 
 function pc() {
  if [ "$cluster4prompt" == "git" ] || [ -z $cluster4prompt ]
  then
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+  ssh $ssh_opts -i $private_key -l nutanix $@
  else
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix ${cluster4prompt}-pc$@
+  ssh $ssh_opts -i $private_key -l nutanix ${cluster4prompt}-pc$@
  fi
 }
 
 function c() {
  if [ -z $@ ] && [ ! -z $cluster4prompt ]
  then
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $cluster4prompt
+  ssh $ssh_opts -i $private_key -l nutanix $cluster4prompt
  else
-  ssh $ssh_opts -i ~/.ssh/id_rsa -l nutanix $@
+  ssh $ssh_opts -i $private_key -l nutanix $@
  fi
 }
 
@@ -68,5 +70,5 @@ function cinfo() {
 
 #alias c="n \$cluster4prompt"
 
-alias sshn="ssh -i ~/.ssh/nutan_id_rsa -l nutanix"
+alias sshn="ssh -i $private_key -l nutanix"
 alias sshp="ssh $ssh_opts -l nutanix"
