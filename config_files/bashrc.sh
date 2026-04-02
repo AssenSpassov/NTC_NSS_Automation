@@ -95,28 +95,34 @@ if [ ! -z "$cluster4prompt" ]
         # prompt as per the above site: [<username>@<hostname(short)><space>()<space><directory(basename)>]<#/$><space>
         # and added colors
     export PS1='[\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]($cluster4prompt)\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\W\[$(tput sgr0)\]]$(__git_ps1 " (%s)")\\$ \[$(tput sgr0)\]'
-    window_index=`tmux display-message -p '#I'`
-    #tmux rename-window -t $window_index "${cluster4prompt}"
-    window_name=`tmux display-message -p '#W'`
-    window_name_lower=$(echo "$window_name" | tr '[:upper:]' '[:lower:]')
-     if [[ "$window_name_lower" == *"$cluster4prompt"* ]]
-      then
-       tmux rename-window -t $window_index "${window_name}"
+    checking_tmux=$(tmux display-message -p '#I' 2>/dev/null)
+    if [ -n "$checking_tmux" ]; then
+      window_index=$(tmux display-message -p '#I')
+      if [ -n "$window_index" ]; then
+      #tmux rename-window -t "$window_index" "${cluster4prompt}"
+      window_name=$(tmux display-message -p '#W')
+      window_name_lower=$(echo "$window_name" | tr '[:upper:]' '[:lower:]')
+      if [[ "$window_name_lower" == *"$cluster4prompt"* ]]; then
+        tmux rename-window -t "$window_index" "$window_name"
       else
-       tmux rename-window -t $window_index "${cluster4prompt}"
-     fi
+        tmux rename-window -t "$window_index" "$cluster4prompt"
+      fi
+      fi
+    fi
     #cluster4prompt=""
    else
     export PS1='[\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]($cluster4prompt)\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\W\[$(tput sgr0)\]]$(__git_ps1 " (%s)")\\$ \[$(tput sgr0)\]'
-    window_index=`tmux display-message -p '#I'`
-    window_name=`tmux display-message -p '#W'`
-    window_name_lower=$(echo "$window_name" | tr '[:upper:]' '[:lower:]')
-     if [[ "$window_name_lower" == *"$cluster4prompt"* ]]
-      then
-       tmux rename-window -t $window_index "${window_name}"
+    checking_tmux=$(tmux display-message -p '#I' 2>/dev/null)
+    if [ -n "$checking_tmux" ]; then
+      window_index=$(tmux display-message -p '#I')
+      window_name=$(tmux display-message -p '#W')
+      window_name_lower=$(echo "$window_name" | tr '[:upper:]' '[:lower:]')
+      if [[ "$window_name_lower" == *"$cluster4prompt"* ]]; then
+      tmux rename-window -t "$window_index" "$window_name"
       else
-       tmux rename-window -t $window_index "${cluster4prompt}"
-     fi
+      tmux rename-window -t "$window_index" "$cluster4prompt"
+      fi
+    fi
     #tmux rename-window -t $window_index "${cluster4prompt}"
   fi
  else
