@@ -74,7 +74,7 @@ done
 # accordingly
 cd $BASEDIR 
 
-sgt_clusters="adrastea metis io amalthea callisto elara leda himalia themisto lisythea pandia autonoe valetudo"
+sgt_clusters=`get_available_clusters`
 local_payload_path="./payload/"
 payload_folder_name="payload/"
 cvm_pkg_basename="cvm.pkg.tar.gz"
