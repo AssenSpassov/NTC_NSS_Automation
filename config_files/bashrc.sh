@@ -76,8 +76,13 @@ else
       fi
     done
     if [[ -z "$found" ]]; then
-      echo "Invalid selection: '$cluster4prompt' is not in the list."
-      unset cluster4prompt
+      #echo "Invalid selection: '$cluster4prompt' is not in the list."
+      read -p "The selected cluster '$cluster4prompt' is not in the list, do you want to continue with this value? (y/n): " yn
+      case $yn in
+          [Yy]* ) echo "Continuing with '$cluster4prompt'.";;
+          * ) echo "Exiting."; unset cluster4prompt; return;;
+      esac
+      #unset cluster4prompt
     fi
   fi
 fi
